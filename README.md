@@ -55,7 +55,8 @@ prisma = global.prisma;
 }
 
 export default prisma;
-```js
+```
+js
 
 # Github Authentication Setup
 
