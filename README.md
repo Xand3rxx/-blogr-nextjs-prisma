@@ -40,7 +40,7 @@ This is a basic blog project for the fullstack tutorial with Next.js and Prisma.
 7. You'll use a single `PrismaClient` instance that you can import into any file where it's needed. The instance will be created in a `prisma.ts` file inside the `lib/` directory. Go ahead and create the missing directory and file: `mkdir lib && touch lib/prisma.ts`
 
 8. Add the following code in the `prisma.ts` file:
-<pre><code>
+```
 import { PrismaClient } from "@prisma/client";
 
 let prisma: PrismaClient;
@@ -55,7 +55,7 @@ prisma = global.prisma;
 }
 
 export default prisma;
-</code></pre>
+```js
 
 # Github Authentication Setup
 
