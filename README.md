@@ -41,20 +41,20 @@ This is a basic blog project for the fullstack tutorial with Next.js and Prisma.
 
 8. Add the following code in the `prisma.ts` file:
 ```
-import { PrismaClient } from "@prisma/client";
+  import { PrismaClient } from "@prisma/client";
 
-let prisma: PrismaClient;
+  let prisma: PrismaClient;
 
-if (process.env.NODE_ENV === "production") {
-prisma = new PrismaClient();
-} else {
-if (!global.prisma) {
-global.prisma = new PrismaClient();
-}
-prisma = global.prisma;
-}
+  if (process.env.NODE_ENV === "production") {
+    prisma = new PrismaClient();
+  } else {
+  if (!global.prisma) {
+    global.prisma = new PrismaClient();
+  }
+    prisma = global.prisma;
+  }
 
-export default prisma;
+  export default prisma;
 ```
 js
 
