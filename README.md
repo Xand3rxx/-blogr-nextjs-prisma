@@ -5,7 +5,6 @@ This is a basic blog project for the fullstack tutorial with Next.js and Prisma.
 ## Languages
 
 - HTML5
-- Tailwind CSS
 - NextJs
 - React
 - Typescript
@@ -63,7 +62,7 @@ Just in case you need to setup your own authentication in a different project
 
 1. Install the `NextAuth.js` library in your app: `npm install next-auth@4 @next-auth/prisma-adapter`
 
-2. For this project I created 3 more models `Account`, `Session`, and `VerificationToken` in the `schema.prisma` file.
+2. For this project 3 more models `Account`, `Session`, and `VerificationToken` were added in the `schema.prisma` file.
 
 3. Run the `npx prisma db push` command again.
 
